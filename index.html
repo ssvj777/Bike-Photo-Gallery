@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VJ's Bike Gallery...</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- StyleSheet Link -->
+    <link rel="stylesheet" href="./assets/style.css" />
+
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <!-- <div class="loading" id="loading">
+      <div class="spinner"></div>
+    </div> -->
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+      <i class="fas fa-angle-double-up"></i>
+    </button>
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Navbar Logo -->
+      <div>
+        <img
+          src="./assets/img/xpulse.png"
+          alt="Avengers Logo..."
+          width="167px"
+        />
+      </div>
+
+      <!-- Navbar Toggle Buttton -->
+      <div class="show-navbar">
+        <i class="toggle-btn fa-solid fa-bars"></i>
+      </div>
+
+      <!-- Navbar Close Buttton -->
+      <div class="close-navbar">
+        <i class="x-mark fa-solid fa-xmark"></i>
+      </div>
+
+      <!-- Navbar List Content -->
+      <div class="navbar-list">
+        <a class="filter-btn" data-filter="all">All Photos</a>
+        <a class="filter-btn" data-filter="journey">Journey</a>
+        <a class="filter-btn" data-filter="milestones">Milestones</a>
+      </div>
+    </nav>
+
+    <!-- Side Navbar -->
+    <nav class="side-navbar">
+      <div class="side-navbar-list">
+        <a class="filter-btn" data-filter="all">All Photos</a>
+        <a class="filter-btn" data-filter="journey">Journey</a>
+        <a class="filter-btn" data-filter="milestones">Milestones</a>
+      </div>
+    </nav>
+
+    <!-- Gallery Container -->
+    <div class="gallery-container">
+      <div class="gallery-header">
+        <h1>My Bike</h1>
+        <p>Amazing memories captured in time...</p>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Images added directly in HTML -->
+        <div class="gallery-item" data-category="all">
+          <img
+            src="./assets/img/pictures/1.jpg"
+            alt="Bike Photo 1"
+            loading="lazy"
+          />
+          <div class="category-tag">All</div>
+          <div class="gallery-item-overlay"></div>
+        </div>
+
+        <div class="gallery-item" data-category="milestones">
+          <img
+            src="./assets/img/pictures/10.2.jpg"
+            alt="Bike Milestone"
+            loading="lazy"
+          />
+          <div class="category-tag">Milestones</div>
+          <div class="gallery-item-overlay"></div>
+        </div>
+
+        <div class="gallery-item" data-category="journey">
+          <img
+            src="./assets/img/pictures/11.jpg"
+            alt="Bike Milestone"
+            loading="lazy"
+          />
+          <div class="category-tag">Journey</div>
+          <div class="gallery-item-overlay"></div>
+        </div>
+
+        <div class="gallery-item" data-category="all">
+          <img
+            src="./assets/img/pictures/11.5.jpg"
+            alt="Bike Photo"
+            loading="lazy"
+          />
+          <div class="category-tag">All</div>
+          <div class="gallery-item-overlay"></div>
+        </div>
+
+        <div class="gallery-item" data-category="journey">
+          <img
+            src="./assets/img/pictures/3.jpg"
+            alt="Bike Photo"
+            loading="lazy"
+          />
+          <div class="category-tag">Journey</div>
+          <div class="gallery-item-overlay"></div>
+        </div>
+
+        <div class="gallery-item" data-category="all">
+          <img
+            src="./assets/img/pictures/1.jpg"
+            alt="Bike Photo 1"
+            loading="lazy"
+          />
+          <div class="category-tag">All</div>
+          <div class="gallery-item-overlay"></div>
+        </div>
+
+        <div class="gallery-item" data-category="milestones">
+          <img
+            src="./assets/img/pictures/10.2.jpg"
+            alt="Bike Milestone"
+            loading="lazy"
+          />
+          <div class="category-tag">Milestones</div>
+          <div class="gallery-item-overlay"></div>
+        </div>
+
+        <div class="gallery-item" data-category="journey">
+          <img
+            src="./assets/img/pictures/11.jpg"
+            alt="Bike Milestone"
+            loading="lazy"
+          />
+          <div class="category-tag">Journey</div>
+          <div class="gallery-item-overlay"></div>
+        </div>
+
+
+        <div class="gallery-item" data-category="all">
+          <img
+            src="./assets/img/pictures/1.jpg"
+            alt="Bike Photo 1"
+            loading="lazy"
+          />
+          <div class="category-tag">All</div>
+          <div class="gallery-item-overlay"></div>
+        </div>
+
+        <div class="gallery-item" data-category="milestones">
+          <img
+            src="./assets/img/pictures/10.2.jpg"
+            alt="Bike Milestone"
+            loading="lazy"
+          />
+          <div class="category-tag">Milestones</div>
+          <div class="gallery-item-overlay"></div>
+        </div>
+
+        <div class="gallery-item" data-category="journey">
+          <img
+            src="./assets/img/pictures/11.jpg"
+            alt="Bike Milestone"
+            loading="lazy"
+          />
+          <div class="category-tag">Journey</div>
+          <div class="gallery-item-overlay"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-content">
+        <span class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></span>
+        <span class="lightbox-nav lightbox-prev" id="lightboxPrev"
+          ><i class="fa-solid fa-angles-left"></i></span
+        >
+        <img id="lightboxImage" src="" alt="" />
+        <span class="lightbox-nav lightbox-next" id="lightboxNext"
+          ><i class="fa-solid fa-angles-right"></i></span
+        >
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> | Created By
+          <a href="https://www.linkedin.com/in/ssvj777/">VIJAY SS</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- External Javascript File start-->
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
