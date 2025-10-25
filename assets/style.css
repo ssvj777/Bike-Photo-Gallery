@@ -7,20 +7,16 @@
 :root {
   --background-color: #0b0c10;
   --border-color: rgba(148, 163, 184, 0.1);
-  --panel: #111318;
-  --spinner-bg: #0f172a;
+  --panel: #0d1117;   
+  --spinner-bg: #0f1419;  
   --grey: #a8b2c6;
   --text: #e6e9ef;
   --brand: #5b8cff;
   --brand-2: #7bd389;
-  --primary-blue: #2563eb;
-  --marvel-blue: rgba(5, 236, 236, 0.863);
+  --primary-blue: #00d4ff;
+  --marvel-blue: #00aeef;
   --marvel-gold: #f5a623;
-  --gradient: linear-gradient(
-    147deg,
-    var(--marvel-blue) 100%,
-    var(--primary-blue) 0%
-  );
+  --gradient: linear-gradient(135deg, #00aeef 0%, #0066aa 100%);
 }
 
 /* Body Styling */
@@ -88,6 +84,7 @@ html {
   width: 50px;
   height: 50px;
   background: var(--gradient);
+  
   color: white;
   border: none;
   border-radius: 50%;
@@ -112,7 +109,6 @@ html {
 
 .scroll-top:hover {
   transform: translateY(-5px);
-  box-shadow: var(--panel);
 }
 
 /* Navbar Styling */
@@ -227,7 +223,7 @@ html {
   background: linear-gradient(
     90deg,
     transparent,
-    var(--marvel-blue),
+    #00d4ff,              /* Changed: Bright techno blue */
     transparent
   );
   transition: left 0.5s ease;
@@ -236,6 +232,9 @@ html {
 .navbar-list a:hover::before,
 .side-navbar-list a:hover::before {
   left: 100%;
+  color: #00d4ff;                    /* Changed: Bright techno blue */
+  border-color: #00aeef;             /* Changed: Techno blue */
+  box-shadow: 0 0 15px rgba(0, 174, 239, 0.3);  /* Added: Blue glow */
 }
 
 .navbar-list a:hover,
@@ -249,12 +248,13 @@ html {
 .gallery-container {
   max-width: 1234px;
   margin: 17px auto;
-  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 22px;
   padding: 17px 47px;
-  margin-top: 140px;
+  margin-top: 144px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  background: rgba(13, 17, 23, 0.7);           /* Changed: Darker with blue tint */
+  border: 2px solid var(--border-color);
 }
 
 .gallery-header {
@@ -264,7 +264,7 @@ html {
 }
 
 .gallery-header h1 {
-  color: var(--marvel-blue);
+  color: #0088cc;
   font-size: 47px;
   margin-bottom: 7px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -293,9 +293,11 @@ html {
   border-radius: 17px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(13, 17, 23, 0.6);  /* Changed: Darker background */
   backdrop-filter: blur(5px);
   height: 377px;
+  
+  
 }
 
 .gallery-item:hover {
@@ -323,7 +325,7 @@ html {
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    rgba(0, 0, 0, 0.8) 100%
+    rgba(0, 0, 0, 0.7) 100%
   );
   display: flex;
   align-items: flex-end;
@@ -346,6 +348,7 @@ html {
   border-radius: 15px;
   font-size: 0.8rem;
   font-weight: bold;
+  
 }
 
 /* Lightbox styles */
@@ -361,6 +364,7 @@ html {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  
 }
 
 .lightbox.active {
@@ -375,8 +379,8 @@ html {
 }
 
 .lightbox-content img {
-  width: 100%;
   min-width: 350px;
+  max-width: 350px;
   height: 550px;
   object-fit: cover;
   object-position: 100%;
@@ -440,6 +444,7 @@ html {
   border-top: 2px solid var(--border-color);
   font-style: italic;
   padding: 22px;
+  
 }
 
 .footer p {
@@ -450,7 +455,7 @@ html {
 }
 
 .footer a {
-  color: var(--marvel-blue);
+  color: #00d4ff; 
   text-decoration: none;
   transition: all 0.3s ease;
   position: relative;
@@ -465,6 +470,7 @@ html {
   height: 2px;
   background: var(--gradient);
   transition: width 0.3s ease;
+  background: linear-gradient(90deg, #00d4ff, #00aeef);  /* Changed: Techno blue gradient */
 }
 
 .footer a:hover {
@@ -476,6 +482,11 @@ html {
 }
 
 /* Mobile Screen Responsive Styling */
+@media screen and (max-width: 1300px) {
+  .gallery-container {
+    margin: 144px 28px;
+  }
+}
 @media screen and (max-width: 850px) {
   .navbar img {
     margin-left: 22px;
@@ -495,6 +506,7 @@ html {
 
   .side-navbar {
     display: block;
+      padding-top: 11rem;
   }
 
   .navbar .show-navbar .toggle-btn,
@@ -508,16 +520,24 @@ html {
   }
 }
 
-@media (max-width : 567px) {
-  .gallery-header h1 {
-  font-size: 33px;
+@media (max-width : 616px) {
+    .gallery-container {
+    margin: 144px 22px;
+  }
+}
+@media (max-width: 500px) {
+
+    .gallery-header h1 {
+  font-size: 44px;
   
 }
   .gallery-header p {
-  font-size: 22px;
+  font-size: 25px;
 }
-}
-@media (max-width: 500px) {
+      .gallery-container {
+    margin: 144px 17px;
+  }
+
   .gallery-grid {
     grid-template-columns: 1fr;
   }
