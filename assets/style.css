@@ -536,6 +536,7 @@ html {
 }
       .gallery-container {
     margin: 144px 17px;
+      padding: 13px 28px;
   }
 
   .gallery-grid {
