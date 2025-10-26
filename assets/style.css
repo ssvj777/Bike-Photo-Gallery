@@ -260,7 +260,6 @@ html {
 .gallery-header {
   text-align: center;
   margin-bottom: 22px;
-    font-family: "Pacifico";
 }
 
 .gallery-header h1 {
@@ -275,7 +274,6 @@ html {
 .gallery-header p {
   color: var(--brand-2);
   font-size: 28px;
-  
   font-style: italic;
   font-weight: 700;
 }
@@ -346,9 +344,9 @@ html {
   color: #333;
   padding: 5px 12px;
   border-radius: 15px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: bold;
-  
+  font-family: "Pacifico";
 }
 
 /* Lightbox styles */
@@ -485,6 +483,7 @@ html {
 @media screen and (max-width: 1300px) {
   .gallery-container {
     margin: 144px 28px;
+    margin-bottom: 22px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -521,22 +520,31 @@ html {
 }
 
 @media (max-width : 616px) {
-    .gallery-container {
-    margin: 144px 22px;
-  }
-}
-@media (max-width: 500px) {
-
-    .gallery-header h1 {
-  font-size: 44px;
+      .gallery-header h1 {
+  font-size: 38px;
   
 }
   .gallery-header p {
   font-size: 25px;
 }
+    .gallery-container {
+    margin: 144px 22px;
+    margin-bottom: 22px;
+  }
+}
+@media (max-width: 500px) {
+
+    .gallery-header h1 {
+  font-size: 36px;
+  
+}
+  .gallery-header p {
+  font-size: 22px;
+}
       .gallery-container {
     margin: 144px 17px;
       padding: 13px 28px;
+      margin-bottom: 22px;
   }
 
   .gallery-grid {
