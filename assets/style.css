@@ -575,9 +575,9 @@ html {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .lightbox-content img {
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 333px;
+    max-width: 333px;
   }
 }
