@@ -581,3 +581,10 @@ html {
     max-width: 333px;
   }
 }
+
+@media (max-width: 377px) {
+  .lightbox-content img {
+    min-width: 300px;
+    max-width: 300px;
+  }
+}
