@@ -519,6 +519,9 @@ html {
 }
 
 @media (max-width: 616px) {
+  .navbar img {
+    width: 147px;
+}
   .gallery-header h1 {
     font-size: 38px;
   }
