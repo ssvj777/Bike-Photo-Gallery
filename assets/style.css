@@ -288,6 +288,10 @@ html {
   margin-bottom: 28px;
 }
 
+.gallery-stage {
+  display: contents;
+}
+
 .gallery-item {
   position: relative;
   overflow: hidden;
