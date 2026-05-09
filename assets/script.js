@@ -71,7 +71,7 @@ filterButtons.forEach((button) => {
 
     galleryItems.forEach((item) => {
       if (filter === "all" || item.dataset.category === filter) {
-        item.style.display = "block";
+        item.style.display = "";
       } else {
         item.style.display = "none";
       }
