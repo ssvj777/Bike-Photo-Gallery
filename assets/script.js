@@ -39,7 +39,7 @@ document.querySelector(".toggle-btn").addEventListener("click", function () {
 });
 
 document.querySelector(".x-mark").addEventListener("click", function () {
-  sideNavbar.style.left = "-100%";
+  sideNavbar.style.left = "-70%";
   showToggle.style.display = "flex";
   showCloseBtn.style.display = "none";
 });
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   listcontents.forEach(function (listcontent) {
     listcontent.addEventListener("click", function () {
-      sideNavbar.style.left = "-100%";
+      sideNavbar.style.left = "-70%";
       showToggle.style.display = "flex";
       showCloseBtn.style.display = "none";
     });

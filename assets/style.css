@@ -188,7 +188,7 @@ html {
   display: none;
   top: 0px;
   z-index: 22;
-  left: -100%;
+  left: -70%;
   transition: 1s;
   padding-top: 10rem;
 }
