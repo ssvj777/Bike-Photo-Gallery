@@ -47,7 +47,7 @@ document.querySelector(".x-mark").addEventListener("click", function () {
 // Close the menu when a link is clicked
 
 document.addEventListener("DOMContentLoaded", function () {
-  const listcontents = document.querySelectorAll(".side-navbar-list a");
+  const listcontents = document.querySelectorAll(".side-navbar-list button");
 
   listcontents.forEach(function (listcontent) {
     listcontent.addEventListener("click", function () {

@@ -200,8 +200,8 @@ html {
 }
 
 /* Navbar Content Styling */
-.navbar-list a,
-.side-navbar-list a {
+.navbar-list button,
+.side-navbar-list button {
   text-decoration: none;
   color: var(--text);
   font-style: italic;
@@ -214,10 +214,11 @@ html {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  background-color: var(--panel);
 }
 
-.navbar-list a::before,
-.side-navbar-list a::before {
+.navbar-list button::before,
+.side-navbar-list button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -233,16 +234,16 @@ html {
   transition: left 0.5s ease;
 }
 
-.navbar-list a:hover::before,
-.side-navbar-list a:hover::before {
+.navbar-list button:hover::before,
+.side-navbar-list button:hover::before {
   left: 100%;
   color: var(--primary-blue);
   border-color: var(--techno-blue);
   box-shadow: 0 0 15px rgba(0, 174, 239, 0.3);
 }
 
-.navbar-list a:hover,
-.side-navbar-list a:hover {
+.navbar-list button:hover,
+.side-navbar-list button:hover {
   color: var(--techno-blue);
   border-color: var(--techno-blue);
   transform: translateY(-3px);
@@ -480,6 +481,9 @@ html {
 
 .footer a:hover::after {
   width: 100%;
+}
+.filter-btn {
+  touch-action: manipulation;
 }
 
 /* Mobile Screen Responsive Styling */
